@@ -1,7 +1,14 @@
 *{
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
+
+.hidden{
+   display: none;
+}
+
+/* header------------------------------------ */
 
 .header-main{
    display: flex;
@@ -14,8 +21,62 @@
    background-repeat: no-repeat;
    background-position: left bottom;
    background-size: 365px;
+   flex-direction: column;
 }
 
 .img-logo {
    width: 240px;
+}
+
+/* Offers------------------------------------ */
+
+.offers{
+   background-color: #17171A;
+}
+
+.offers-single{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: goldenrod;
+   width: 256px;
+}
+
+.offers-single img{
+   width: 200px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.offers-single h3{
+   margin-bottom: 10px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.offers-single p{
+   margin-bottom: 10px;
+   font-family: sans-serif;
+   font-weight: normal;
+   color: #fff;
+   font-size: 14px;
+   text-align: center;
+}
+
+.offers-single a{
+   font-family: sans-serif;
+   background-color: #F1B26F;
+   color: #17171A;
+   text-decoration: none;
+   padding: 10px 16px;
+   border-radius: 6px;
+   margin-bottom: 10px;
+   transition: .3s;
+}
+
+.offers-single a:hover{
+   background-color: #fff;
 }
