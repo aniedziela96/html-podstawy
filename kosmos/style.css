@@ -4,6 +4,10 @@
    box-sizing: border-box;
 }
 
+body{
+   padding-top: 80px;
+}
+
 .hidden{
    display: none;
 }
@@ -88,14 +92,15 @@
 /* NAVBAR------------------------------------ */
 
 .navbar{
+   top: 0;
    display: flex;
    justify-content: space-between;
    align-items: center;
    height:  80px;
    background-color: #fff;
+   position: fixed;
+   width: 100%;
    }
-
-na
 
 .navbar a img{
    height: 80px;
@@ -103,7 +108,53 @@ na
 
 .navbar ul{
    display: flex;
+   flex-direction: row;
    justify-content: center;
    align-items: center;
    list-style: none;
+}
+
+.navbar ul li{
+   margin: 30px;
+}
+
+.navbar ul li a{
+   font-family: sans-serif;
+   background-color: #F1B26F;
+   color: #17171A;
+   text-decoration: none;
+   padding: 10px 16px;
+   border-radius: 6px;
+   margin-bottom: 10px;
+   transition: .3s;
+}
+
+.navbar ul li a:hover{
+   background-color: palevioletred;
+}
+
+/* WANTED -----------------------------*/
+
+.wanted{
+   background-color: #c63d3d;
+   padding: 50px;
+   width: 100%;
+}
+
+.wanted header{
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+}
+
+.wanted article{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin: 30px;
+}
+
+.wanted article a:hover{
+   background-color: #F1B26F;
 }
