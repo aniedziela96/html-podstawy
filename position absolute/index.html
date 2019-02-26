@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Positioning absolute/relative </title> 
+   <style>
+      
+      *{
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+      }
+
+      .zielony{
+         position: absolute;
+         z-index: 999;
+         top: 90px;
+         left: 100px;
+         height: 140px;
+         width: 140px;
+         background-color: greenyellow;
+      }
+
+      .czerwony{
+         position: absolute;
+         z-index: 100;
+         top: 0px;
+         left: 0px;
+         width: 200px;
+         height: 200px;
+         background-color: red;
+         
+      }
+
+      .niebieski{
+         position: relative;
+         width: 600px;
+         height: 600px;
+         margin-top:50px;
+         background-color: blue;
+      }
+
+      .zolty{
+         position: absolute;
+         top: 0;
+         right: 0;
+         height: 100px;
+         width: 100px;
+         background-color: yellow;
+      }
+   
+   </style>
+</head>
+<body>
+
+   <div class="zielony"></div>
+
+   <div class="czerwony"></div>
+
+   <div class="niebieski">
+      <div class="zolty">
+
+      </div>
+   </div>
+   
+</body>
+</html>
